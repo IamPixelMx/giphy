@@ -1,0 +1,5 @@
+# Ignore dir :
+src/registerServiceWorker.js
+stories/index.stories.js
+config/polyfills.js
+public/widget.js

@@ -1,68 +1,171 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Framework](https://img.shields.io/badge/Framework-React.js-important?style=plastic)](https://create-react-app.dev/docs)
+[![styled with Bootstrap](https://img.shields.io/badge/styled-Bootstrap-blue?style=plastic)](https://emotion.sh/)
+[![formatter with prettier and eslint](https://img.shields.io/badge/formatter-prettier&eslint-blueviolet?style=plastic)](https://github.com/eslint/eslint)
+[![styled guide](https://img.shields.io/badge/style_guide-Airbnb-violet?style=plastic)](https://github.com/airbnb/javascript)
+[![deploy](https://img.shields.io/:deploy-Heroku-pink.svg?style=plastic)](http://badges.isc-license.org)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<br />
+<p align="center">
+  <a href="">
+    <img src="public/tauros.png" alt="Logo" width="155">
+  </a>
 
-### `yarn start`
+  <h3 align="center">Giphy</h3>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares GIFs con que expresar y compartir en todas tus redes.   <br />
+    <a href="https://github.com/eriika19/giphy/tree/master/components"><strong>Explorar proyecto »</strong></a>
+    <br />
+    <br />
+    <a href="https://giphy.vercel.app">Ir a Sitio</a>
+    ·
+    <a href="https://github.com/eriika19/giphy/issues">Reportar Problema</a>
+    ·
+  </p>
+  <br />
+</p>
+ 
+ <h3 align="center"> React, Redux-Saga, Bootstrap, Axios, Eslint, Lint-staged</h3>
+ 
+ <br />
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+# Contenido
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Acerca del Proyecto](#acerca-del-proyecto)
+  - [Herramientas](#_herramientas_)
+  - [Próximos alcances](#próximos-alcances)
+- [Correr proyecto localmente](#correr-proyecto-localmente)
+- [Contacto](#contacto)
 
-### `yarn build`
+ <br />
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Acerca del proyecto 🚀
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Esta aplicación se desarrollo como app web que permite visualizar, encontrar y guardar, los mejores GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir la API de Giphy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ <br />
 
-### `yarn eject`
+### _*Herramientas*_ 🛠️
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React](https://create-react-app.dev/docs)
+- [Redux-Saga](https://github.com/bmealhouse/next-redux-saga)
+- [Axios](https://github.com/axios/axios)
+- [Hooks](https://es.reactjs.org/docs/hooks-intro.html)
+- [Git](https://git-scm.com/)
+- [Eslint](https://eslint.org/)
+- [Lint-staged](https://openbase.io/js/lint-staged)
+- [Husky](https://github.com/typicode/husky)
+- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [Prettier](https://github.com/prettier/prettier)
+- [Airbnb Style Guide](https://github.com/airbnb/javascript)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Próximos alcances
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [ ] Añadir tests en todos los componentes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Correr proyecto localmente
 
-## Learn More
+Este proyecto puede ser corrido en un equipo local, clonando e instalando localmente las dependencias
+requeridas.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Crear proyecto localmente
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Comenzar proyecto de manera locar clonando este repositorio con:
 
-### Code Splitting
+```
+$ git clone https://github.com/eriika19/giphy.git
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Instalar dependencias
 
-### Analyzing the Bundle Size
+Una vez clonado se debe ir al directorio raíz del proyecto y ejecutar el siguiente comando para
+instalar todas las dependencias listadas en el `package.json`:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```
+$ yarn
+```
 
-### Making a Progressive Web App
+### Variables de ambiente
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Se deben definir las variables de ambiente para poder realizar las llamadas a la API_URL, ya que el
+repositorio no las incluye. Es posible correr `cp .env.example .env` para definir las propias
+variables de ambiente en archivo `.env`.
 
-### Advanced Configuration
+Ejemplo:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```shell
+REACT_APP_API_URL_BASE=https://api.giphy.com/v1
+```
 
-### Deployment
+### Correr proyecto
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Para correr Giphy en un ambiente de producción ejecutar:
 
-### `yarn build` fails to minify
+```
+$ yarn build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+$ yarn start
+```
+
+- Para correr Giphy en un ambiente de desarrollo ejecutar:
+
+```
+$ yarn dev
+```
+
+Una vez corriendo estará listo en `http://localhost:3000/`
+
+### Ejecutar tests
+
+Para ejecutar los tests correr los siguientes comando:
+
+```
+$ yarn test
+```
+
+```
+$ yarn test:coverage
+```
+
+### Prettier and Eslint
+
+Prettier and Eslint se ejecutarán automáticamente al realizar un _commit_.
+
+Sin embargo, también pueden ser ejecutados independentemente con los siguientes comandos:
+
+**Prettier**
+
+```
+$ yarn prettier:write
+```
+
+**Eslint**
+
+```
+$ yarn lint:js
+```
+
+### Comentarios
+
+Cualquier duda o comentario no dudes en abrir un issue. 😊
+
+---
+
+> ## _Contacto_
+
+Creado con ❤️ por [Itzel Enciso](https://github.com/eriika19)
+
+Sitio Web - [itzelenciso.com](https://itzelenciso.com/)
+
+LinkedIn - [@itzelenciso](https://www.linkedin.com/in/itzelenciso/)
+
+Correo Gmail -
+[enciso.iq@gmail.com](<mailto:enciso.iq@gmail.com?subject=Reclutamiento&body=¡Buen día! el motivo de contacto es:>)
+
+¡Gracias por visitar!
