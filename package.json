@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "node scripts/deploy.js",
     "eject": "react-scripts eject",
     "test": "react-scripts test",
@@ -13,12 +13,6 @@
     "lint": "eslint src"
   },
   "heroku-run-build-script": true,
-  "_moduleAliases": {
-    "~utils": "./src/utils",
-    "~assets": "./src/assets",
-    "~components": "./src/components",
-    "~pages": "./src/pages"
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -51,8 +45,6 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@testing-library/user-event": "^7.1.2",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "eslint": "^7.1.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-fp": "^2.3.0",
@@ -64,7 +56,6 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
-    "react-app-rewire-hot-loader": "^2.0.1",
     "react-test-renderer": "^16.13.1"
   }
 }
