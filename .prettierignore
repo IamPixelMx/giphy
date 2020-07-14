@@ -1,5 +1,6 @@
 # Ignore everything:
-/*
+/node_modules
+/build
 
 # Except src folder:
-!/src
+# !/src

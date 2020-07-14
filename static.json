@@ -1,0 +1,14 @@
+{
+  "root": "build/",
+  "https_only": true,
+  "clean_urls": false,
+  "routes": {
+    "/**": "index.html"
+  },
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*",
+      "Strict-Transport-Security": "max-age=7776000"
+    }
+  }
+}

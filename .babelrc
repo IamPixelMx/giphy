@@ -1,0 +1,17 @@
+{
+  "plugins": ["dynamic-import-node"],
+  "env": {
+    "production": {
+      "presets": ["react-app"],
+      "plugins": []
+    },
+    "development": {
+      "presets": ["react-app"],
+      "plugins": ["react-hot-loader/babel"]
+    },
+    "test": {
+      "presets": ["react-app"],
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}

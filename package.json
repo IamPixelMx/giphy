@@ -2,6 +2,41 @@
   "name": "giphy",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "deploy": "node scripts/deploy.js",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "test:coverage": "npm test -- --coverage --watchAll",
+    "format": "prettier \"**/*.+(js|jsx|json|yml|yaml|md)\" --write",
+    "lint": "eslint src"
+  },
+  "heroku-run-build-script": true,
+  "_moduleAliases": {
+    "~utils": "./src/utils",
+    "~assets": "./src/assets",
+    "~components": "./src/components",
+    "~pages": "./src/pages"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "hooks": {
+    "pre-commit": "lint-staged"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@giphy/js-fetch-api": "^1.6.0",
     "@giphy/react-components": "^1.5.1",
@@ -29,34 +64,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
+    "react-app-rewire-hot-loader": "^2.0.1",
     "react-test-renderer": "^16.13.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "node scripts/deploy.js",
-    "eject": "react-scripts eject",
-    "test": "react-scripts test",
-    "test:coverage": "npm test -- --coverage --watchAll",
-    "format": "prettier \"**/*.+(js|jsx|json|yml|yaml|md)\" --write",
-    "lint": "eslint src"
-  },
-  "hooks": {
-    "pre-commit": "lint-staged"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
