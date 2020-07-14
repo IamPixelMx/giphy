@@ -45,7 +45,8 @@ Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares 
 
 ## Acerca del proyecto 🚀
 
-Esta aplicación se desarrollo como app web que permite visualizar, encontrar y guardar, los mejores GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir la API de Giphy
+Esta aplicación se desarrollo como app web que permite visualizar, encontrar y guardar, los mejores
+GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir la API de Giphy
 
  <br />
 
@@ -69,8 +70,8 @@ Esta aplicación se desarrollo como app web que permite visualizar, encontrar y 
 
 ## Correr proyecto localmente
 
-Este proyecto puede ser corrido en un equipo local, clonando e instalando localmente las dependencias
-requeridas.
+Este proyecto puede ser corrido en un equipo local, clonando e instalando localmente las
+dependencias requeridas.
 
 ### Crear proyecto localmente
 
