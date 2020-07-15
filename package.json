@@ -9,7 +9,7 @@
     "eject": "react-scripts eject",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
-    "format": "prettier \"**/*.+(js|jsx|json|yml|yaml|md)\" --write",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|md)\" --write",
     "lint": "eslint src"
   },
   "heroku-run-build-script": true,

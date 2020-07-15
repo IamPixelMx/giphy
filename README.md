@@ -1,6 +1,6 @@
 [![Framework](https://img.shields.io/badge/Framework-React.js-important?style=plastic)](https://create-react-app.dev/docs)
-[![styled with Bootstrap](https://img.shields.io/badge/styled-Bootstrap-blue?style=plastic)](https://emotion.sh/)
-[![formatter with prettier and eslint](https://img.shields.io/badge/formatter-prettier&eslint-blueviolet?style=plastic)](https://github.com/eslint/eslint)
+[![styled with Bootstrap](https://img.shields.io/badge/styled-Bootstrap-blue?style=plastic)](https://reactstrap.github.io/)
+[![formatter with prettier](https://img.shields.io/badge/formatter-prettier-blueviolet?style=plastic)](https://github.com/prettier/prettier)
 [![styled guide](https://img.shields.io/badge/style_guide-Airbnb-violet?style=plastic)](https://github.com/airbnb/javascript)
 [![deploy](https://img.shields.io/:deploy-Heroku-pink.svg?style=plastic)](http://badges.isc-license.org)
 
@@ -55,6 +55,7 @@ GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir l
 - [React](https://create-react-app.dev/docs)
 - [Redux-Saga](https://github.com/bmealhouse/next-redux-saga)
 - [Axios](https://github.com/axios/axios)
+- [Bootstrap](https://reactstrap.github.io/)
 - [Hooks](https://es.reactjs.org/docs/hooks-intro.html)
 - [Git](https://git-scm.com/)
 - [Eslint](https://eslint.org/)
@@ -110,14 +111,10 @@ REACT_APP_API_URL_BASE=https://api.giphy.com/v1
 $ yarn build
 ```
 
-```
-$ yarn start
-```
-
 - Para correr Giphy en un ambiente de desarrollo ejecutar:
 
 ```
-$ yarn dev
+$ yarn start
 ```
 
 Una vez corriendo estará listo en `http://localhost:3000/`
@@ -143,13 +140,13 @@ Sin embargo, también pueden ser ejecutados independentemente con los siguientes
 **Prettier**
 
 ```
-$ yarn prettier:write
+$ yarn prettier
 ```
 
 **Eslint**
 
 ```
-$ yarn lint:js
+$ yarn lint
 ```
 
 ### Comentarios
