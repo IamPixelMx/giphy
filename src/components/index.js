@@ -1,3 +1,5 @@
-import { logo } from './Icons';
+import { LogoIcon } from './Icons';
+import { Layout } from './Layout';
+import { Navbar } from './Navbar';
 
-export { logo };
+export { LogoIcon, Layout, Navbar };
