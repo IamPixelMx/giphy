@@ -8,17 +8,17 @@
 
 <br />
 <p align="center">
-  <a href="">
+  <a href="https://gipphy.herokuapp.com">
     <img src="public/logo.png" alt="Logo" width="155">
   </a>
 <br />
 <br />
   <p align="center">
 Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares GIFs con que expresar y compartir en todas tus redes.   <br />
-    <a href="https://github.com/eriika19/giphy/tree/master/components"><strong>Explorar proyecto »</strong></a>
+    <a href="https://github.com/eriika19/giphy/tree/master/src"><strong>Explorar proyecto »</strong></a>
     <br />
     <br />
-    <a href="https://giphy.vercel.app">Ir a Sitio</a>
+    <a href="https://gipphy.herokuapp.com">Ir a Sitio</a>
     ·
     <a href="https://github.com/eriika19/giphy/issues">Reportar Problema</a>
     ·
@@ -103,6 +103,12 @@ REACT_APP_API_URL_BASE=https://api.giphy.com/v1
 ```
 
 ### Correr proyecto
+
+- Para correr Giphy en un ambiente de desarrollo ejecutar:
+
+```
+$ yarn dev
+```
 
 - Para correr Giphy en un ambiente de producción ejecutar:
 
