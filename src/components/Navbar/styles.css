@@ -4,6 +4,11 @@
   margin: auto 0.7rem auto 0.6rem;
 }
 
+.label-search {
+  width: 43%;
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .navbar-logo {
     animation: navbar-logo-spin infinite 20s linear;

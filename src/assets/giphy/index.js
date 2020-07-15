@@ -1,3 +1,3 @@
-import giphyLogo from './giphy-logo.png';
+import giphy from './giphy.png';
 
-export { giphyLogo };
+export { giphy };

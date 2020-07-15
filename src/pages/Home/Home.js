@@ -1,15 +1,14 @@
 import React from 'react';
-import { Layout } from 'components';
+import { Layout, SearchInput } from 'components';
 
 const Home = () => {
   return (
     <Layout>
-      <p>
-        Se adaptó <code>src/App.js</code> para Giphy Engine.
-      </p>
-      <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-        React Docs
-      </a>
+      <div className='row'>
+        <div className='col align-self-center'>
+          <SearchInput />
+        </div>
+      </div>
     </Layout>
   );
 };
