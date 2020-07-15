@@ -29,9 +29,9 @@
       "^utils(.*)$": "<rootDir>/src/utils$1"
     },
     "collectCoverageFrom": [
-      "components/**/*.{js,jsx}",
-      "pages/**/*.{js,jsx}",
-      "!store/configureStore.js",
+      "src/components/**/*.{js,jsx}",
+      "src/pages/**/*.{js,jsx}",
+      "!src/*.{js,jsx}",
       "!**/*/index.js"
     ]
   },
