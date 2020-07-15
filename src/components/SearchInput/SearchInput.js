@@ -8,7 +8,7 @@ const SearchInput = ({ buttonText, placeholder }) => {
   return (
     <Form className='container'>
       <FormGroup>
-        <div className='text-center mt-5 mb-1'>
+        <div className='text-center mt-5 pb-2'>
           <Label for='input-search'>
             <img src={giphy} className='label-search' alt='logo' />
           </Label>

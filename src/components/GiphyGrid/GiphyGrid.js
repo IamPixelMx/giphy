@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 // use react-resize-observer to adapt and resize grid
 import ResizeObserver from 'react-resize-observer';
 import { Gif, Grid } from '@giphy/react-components';
@@ -35,6 +36,10 @@ const GiphyGrid = ({ fetchGifs }) => {
       )}
     </React.Fragment>
   );
+};
+
+GiphyGrid.propTypes = {
+  fetchGifs: PropTypes.func.isRequired,
 };
 
 export default GiphyGrid;
