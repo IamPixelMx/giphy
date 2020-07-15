@@ -4,7 +4,12 @@ import PropTypes from 'prop-types';
 import ResizeObserver from 'react-resize-observer';
 import { Gif, Grid } from '@giphy/react-components';
 
-const GiphyGrid = ({ fetchGifs }) => {
+import { giphyFetch } from 'utils';
+
+// fetch 10 gifs at a time as the user scrolls (offset is handled by the grid)
+const getTrendingGifs = offset => giphyFetch.trending({ offset, limit: 10 });
+
+const GiphyGrid = ({ fetchGifs, trending }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [modalGif, setModalGif] = useState();
 
@@ -18,7 +23,7 @@ const GiphyGrid = ({ fetchGifs }) => {
       <div className='mx-2 pt-md-4'>
         <Grid
           onGifClick={(gif, e) => onClick(gif, e)}
-          fetchGifs={fetchGifs}
+          fetchGifs={trending ? getTrendingGifs : fetchGifs}
           width={width}
           columns={3}
           gutter={6}
@@ -38,8 +43,13 @@ const GiphyGrid = ({ fetchGifs }) => {
   );
 };
 
+GiphyGrid.defaultProps = {
+  trending: false,
+};
+
 GiphyGrid.propTypes = {
-  fetchGifs: PropTypes.func.isRequired,
+  fetchGifs: PropTypes.func,
+  trending: PropTypes.bool.isRequired,
 };
 
 export default GiphyGrid;
