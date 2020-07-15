@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import routes from './routes';
-import { Home } from './pages';
+import { Home } from 'pages';
 
 class App extends React.PureComponent {
   getHomeComponent(fetching, error) {
