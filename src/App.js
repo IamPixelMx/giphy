@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Se adaptó <code>src/App.js</code> para Giphy Engine.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          React Docs
-        </a>
-      </header>
-    </div>
-  );
+import routes from './routes';
+import { Home } from './pages';
+
+class App extends React.PureComponent {
+  getHomeComponent(fetching, error) {
+    if (fetching) {
+      return <div>...cargando</div>;
+    } else if (error) {
+      return <div>Error: {error}</div>;
+    } else {
+      return Home;
+    }
+  }
+
+  render() {
+    const { fetching, error } = this.props;
+    const HomeComponent = this.getHomeComponent(fetching, error);
+
+    return (
+      <Router basename={window.location.pathname || ''}>
+        <Switch>
+          <Route exact path={routes.home} component={HomeComponent} />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;

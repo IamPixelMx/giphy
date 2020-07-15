@@ -23,7 +23,6 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/App.js",
       "src/components/**/*.{js,jsx}",
       "src/pages/**/*.{js,jsx}",
       "!src/store/configureStore.js",
@@ -45,9 +44,12 @@
   "dependencies": {
     "@giphy/js-fetch-api": "^1.6.0",
     "@giphy/react-components": "^1.5.1",
+    "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.5.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
