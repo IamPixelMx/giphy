@@ -6,9 +6,9 @@ import { giphy } from 'assets/giphy';
 
 const SearchInput = ({ buttonText, placeholder }) => {
   return (
-    <Form>
+    <Form className='container'>
       <FormGroup>
-        <div className='text-center mt-5 mb-4'>
+        <div className='text-center mt-5'>
           <Label for='input-search'>
             <img src={giphy} className='label-search' alt='logo' />
           </Label>

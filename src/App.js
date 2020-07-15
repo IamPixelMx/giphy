@@ -16,6 +16,8 @@ class App extends React.PureComponent {
   }
 
   render() {
+    console.log(process.env.REACT_APP_GIPHY_API_KEY);
+
     const { fetching, error } = this.props;
     const HomeComponent = this.getHomeComponent(fetching, error);
 

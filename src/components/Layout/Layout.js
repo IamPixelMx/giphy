@@ -5,15 +5,15 @@ import { Navbar } from 'components';
 
 const Layout = ({ children }) => {
   return (
-    <main id='main'>
+    <React.Fragment>
       <Navbar />
-      <div className='container'>{children}</div>
-    </main>
+      <main>{children}</main>
+    </React.Fragment>
   );
 };
 
 Layout.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
