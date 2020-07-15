@@ -9,11 +9,10 @@
 <br />
 <p align="center">
   <a href="">
-    <img src="public/tauros.png" alt="Logo" width="155">
+    <img src="public/logo.png" alt="Logo" width="155">
   </a>
-
-  <h3 align="center">Giphy</h3>
-
+<br />
+<br />
   <p align="center">
 Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares GIFs con que expresar y compartir en todas tus redes.   <br />
     <a href="https://github.com/eriika19/giphy/tree/master/components"><strong>Explorar proyecto »</strong></a>
