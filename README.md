@@ -102,7 +102,7 @@ variables de ambiente en archivo `.env`.
 Ejemplo:
 
 ```shell
-REACT_APP_API_URL_BASE=https://api.giphy.com/v1
+REACT_APP_API_BASE_URL=https://api.giphy.com/v1
 ```
 
 ### Correr proyecto
