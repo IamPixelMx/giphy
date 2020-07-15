@@ -1,8 +1,10 @@
 [![Framework](https://img.shields.io/badge/Framework-React.js-important?style=plastic)](https://create-react-app.dev/docs)
+[![server](https://img.shields.io/badge/server-express-yellow?style=plastic)](https://expressjs.com/)
+
 [![styled with Bootstrap](https://img.shields.io/badge/styled-Bootstrap-blue?style=plastic)](https://reactstrap.github.io/)
 [![formatter with prettier](https://img.shields.io/badge/formatter-prettier-blueviolet?style=plastic)](https://github.com/prettier/prettier)
 [![styled guide](https://img.shields.io/badge/style_guide-Airbnb-violet?style=plastic)](https://github.com/airbnb/javascript)
-[![deploy](https://img.shields.io/:deploy-Heroku-pink.svg?style=plastic)](http://badges.isc-license.org)
+[![deploy](https://img.shields.io/:deploy-Heroku-pink.svg?style=plastic)](https://devcenter.heroku.com/categories/reference)
 
 ---
 
@@ -26,7 +28,7 @@ Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares 
   <br />
 </p>
  
- <h3 align="center"> React, Redux-Saga, Bootstrap, Axios, Eslint, Lint-staged</h3>
+ <h3 align="center"> React, Redux-Saga, Bootstrap, Axios, Express, Eslint, Lint-staged</h3>
  
  <br />
 
@@ -54,6 +56,7 @@ GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir l
 - [React](https://create-react-app.dev/docs)
 - [Redux-Saga](https://github.com/bmealhouse/next-redux-saga)
 - [Axios](https://github.com/axios/axios)
+- [Express](https://expressjs.com/)
 - [Bootstrap](https://reactstrap.github.io/)
 - [Hooks](https://es.reactjs.org/docs/hooks-intro.html)
 - [Git](https://git-scm.com/)

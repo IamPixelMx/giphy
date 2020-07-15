@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { Navbar as BootNavbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 import { LogoIcon } from 'components';
@@ -15,7 +15,7 @@ const Nvabar = props => {
             <strong>GIPHY</strong>
           </span>
         </NavbarBrand>
-        <Nav className='mr-auto' navbar>
+        <Nav className='ml-3 mr-auto' navbar>
           <NavItem>
             <NavLink>Top Choice</NavLink>
           </NavItem>

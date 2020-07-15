@@ -7,7 +7,7 @@ const SearchInput = props => {
   return (
     <Form>
       <FormGroup>
-        <div className='text-center'>
+        <div className='text-center mt-5 mb-4'>
           <Label for='input-search'>
             <img src={giphy} className='label-search' alt='logo' />
           </Label>
