@@ -1,6 +1,5 @@
 [![Framework](https://img.shields.io/badge/Framework-React.js-important?style=plastic)](https://create-react-app.dev/docs)
 [![server](https://img.shields.io/badge/server-express-yellow?style=plastic)](https://expressjs.com/)
-
 [![styled with Bootstrap](https://img.shields.io/badge/styled-Bootstrap-blue?style=plastic)](https://reactstrap.github.io/)
 [![formatter with prettier](https://img.shields.io/badge/formatter-prettier-blueviolet?style=plastic)](https://github.com/prettier/prettier)
 [![styled guide](https://img.shields.io/badge/style_guide-Airbnb-violet?style=plastic)](https://github.com/airbnb/javascript)
@@ -16,7 +15,7 @@
 <br />
 <br />
   <p align="center">
-Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares GIFs con que expresar y compartir en todas tus redes.   <br />
+Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares GIFs con que expresarte y, compartir en todas tus redes.   <br />
     <a href="https://github.com/eriika19/giphy/tree/master/src"><strong>Explorar proyecto »</strong></a>
     <br />
     <br />
@@ -28,7 +27,7 @@ Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares 
   <br />
 </p>
  
- <h3 align="center"> React, Redux-Saga, Bootstrap, Axios, Express, Eslint, Lint-staged</h3>
+ <h3 align="center"> React, Redux-Saga, Bootstrap, GiphyFetch, Express, Eslint, Lint-staged</h3>
  
  <br />
 
@@ -55,7 +54,7 @@ GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir l
 
 - [React](https://create-react-app.dev/docs)
 - [Redux-Saga](https://github.com/bmealhouse/next-redux-saga)
-- [Axios](https://github.com/axios/axios)
+- [GiphyFetch](https://github.com/Giphy/giphy-js/blob/master/packages/fetch-api/README.md)
 - [Express](https://expressjs.com/)
 - [Bootstrap](https://reactstrap.github.io/)
 - [Hooks](https://es.reactjs.org/docs/hooks-intro.html)
@@ -95,14 +94,14 @@ $ yarn
 
 ### Variables de ambiente
 
-Se deben definir las variables de ambiente para poder realizar las llamadas a la API_URL, ya que el
-repositorio no las incluye. Es posible correr `cp .env.example .env` para definir las propias
-variables de ambiente en archivo `.env`.
+Se deben definir las API_KEY en las variables de ambiente , ya que el repositorio no las incluye. Es
+posible correr `cp .env.example .env` para definir las propias variables de ambiente en archivo
+`.env`.
 
 Ejemplo:
 
 ```shell
-REACT_APP_API_BASE_URL=https://api.giphy.com/v1
+REACT_APP_GIPHY_API_KEY=************
 ```
 
 ### Correr proyecto
