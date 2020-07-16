@@ -10,8 +10,8 @@ const gifsReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
       return {
         ...state,
         target: {
-          ...state.target,
           ...payload,
+          data: '',
         },
         fetching: true,
       };

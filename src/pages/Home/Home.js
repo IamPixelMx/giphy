@@ -5,7 +5,6 @@ import { getTargetData } from 'selectors';
 
 const Home = () => {
   const targetData = useSelector(getTargetData);
-  console.log('targetData from Home: ', targetData, ' ya');
 
   return (
     <Layout>

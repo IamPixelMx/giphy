@@ -6,8 +6,9 @@ import { fetchGifsError, fetchGifsSuccess } from '../actions';
 function* getData(action) {
   const { trending, value } = action.payload;
   try {
-    const dataGifs = trending ? yield call(getTrendingGifs) : yield call(getTargetGifs, value);
-    yield put(fetchGifsSuccess(dataGifs));
+    const response = trending ? yield call(getTrendingGifs) : yield call(getTargetGifs, value);
+    const { data } = response;
+    yield put(fetchGifsSuccess(data));
   } catch (error) {
     console.error(error);
     yield put(fetchGifsError(error));
