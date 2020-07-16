@@ -7,14 +7,28 @@ const INITIAL_STATE = gifsSearch;
 const gifsReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
   switch (type) {
     case FETCH_GIFS:
-      return { ...state, target: payload, fetching: true };
+      return {
+        ...state,
+        target: {
+          ...state.target,
+          ...payload,
+        },
+        fetching: true,
+      };
 
     case FETCH_GIFS_ERROR:
-      return { ...state, error: payload, fetching: false };
+      return {
+        target: { value: undefined, trending: false, data: '' },
+        error: payload,
+        fetching: false,
+      };
 
     case FETCH_GIFS_SUCCESS:
       return {
-        ...state,
+        target: {
+          ...state.target,
+          data: payload,
+        },
         fetching: false,
         error: '',
       };

@@ -1,7 +1,8 @@
 import { FETCH_GIFS, FETCH_GIFS_ERROR, FETCH_GIFS_SUCCESS } from '../constants';
 
-export const fetchGifs = () => ({
+export const fetchGifs = (payload = {}) => ({
   type: FETCH_GIFS,
+  payload,
 });
 
 export const fetchGifsError = payload => ({

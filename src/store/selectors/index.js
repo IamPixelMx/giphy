@@ -1,3 +1,3 @@
-import { getState, getTarget, getTargetValue } from './gifsSelector';
+import { getState, getTarget, getTargetData, getTargetValue } from './gifsSelector';
 
-export { getState, getTarget, getTargetValue };
+export { getState, getTarget, getTargetData, getTargetValue };

@@ -6,7 +6,7 @@ import routes from './routes';
 import { Home } from 'pages';
 class App extends React.PureComponent {
   render() {
-    console.log(this.props);
+    console.log('props from App', this.props);
 
     return (
       <Router basename={window.location.pathname || ''}>

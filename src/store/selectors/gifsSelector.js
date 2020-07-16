@@ -8,3 +8,6 @@ export const getTarget = createSelector([targetSelector], target => target);
 
 const targetValueSelector = state => state.gifsSearch.target;
 export const getTargetValue = createSelector([targetValueSelector], target => target.value);
+
+const targetDataSelector = state => state.gifsSearch.target;
+export const getTargetData = createSelector([targetDataSelector], target => target.data);

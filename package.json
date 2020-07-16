@@ -25,6 +25,8 @@
       "^assets(.*)$": "<rootDir>/src/assets$1",
       "^components(.*)$": "<rootDir>/src/components$1",
       "^pages(.*)$": "<rootDir>/src/pages$1",
+      "^actions(.*)$": "<rootDir>/src/store/actions$1",
+      "^selectors(.*)$": "<rootDir>/src/store/selectors$1",
       "^store(.*)$": "<rootDir>/src/store$1",
       "^utils(.*)$": "<rootDir>/src/utils$1"
     },
@@ -63,7 +65,8 @@
     "react-scripts": "3.4.1",
     "reactstrap": "^8.5.1",
     "redux": "^4.0.5",
-    "redux-saga": "^1.1.3"
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",

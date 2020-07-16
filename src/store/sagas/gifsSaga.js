@@ -1,14 +1,13 @@
 import { call, takeLatest, put } from 'redux-saga/effects';
-import { getGifs } from './api';
+import { getTargetGifs, getTrendingGifs } from './api';
 import { FETCH_GIFS } from '../constants';
 import { fetchGifsError, fetchGifsSuccess } from '../actions';
 
-function* getData() {
+function* getData(action) {
+  const { trending, value } = action.payload;
   try {
-    // const paramsObj = { method: 'GET', url: LIST_BALANCES_URL, API_SECRET };
-    // const dataRes = yield call(getGifs, paramsObj);
-    // yield put(fetchGifsSuccess(dataRes.crypto));
-    yield put(fetchGifsSuccess('gif'));
+    const dataGifs = trending ? yield call(getTrendingGifs) : yield call(getTargetGifs, value);
+    yield put(fetchGifsSuccess(dataGifs));
   } catch (error) {
     console.error(error);
     yield put(fetchGifsError(error));

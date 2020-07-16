@@ -1,5 +1,5 @@
 export const gifsSearch = {
-  target: { value: undefined, trending: false },
+  target: { value: undefined, trending: false, data: '' },
   error: '',
   fetching: false,
 };

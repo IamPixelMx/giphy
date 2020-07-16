@@ -1,4 +1,4 @@
-/*************************** TAUROS ***********************/
+/*************************** GIPHY ***********************/
 const FETCH_GIFS = 'pages/home/FETCH_GIFS';
 const FETCH_GIFS_ERROR = 'pages/home/FETCH_GIFS_ERROR';
 const FETCH_GIFS_SUCCESS = 'pages/home/FETCH_GIFS_SUCCESS';

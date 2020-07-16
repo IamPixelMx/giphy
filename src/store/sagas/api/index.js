@@ -1,3 +1,3 @@
-import getGifs from './giphy-api';
+import { getTargetGifs, getTrendingGifs } from './giphy-api';
 
-export { getGifs };
+export { getTargetGifs, getTrendingGifs };
