@@ -15,7 +15,7 @@
 <br />
 <br />
   <p align="center">
-Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares GIFs con que expresarte y, compartir en todas tus redes.   <br />
+Giphy la herramienta donde puedes encontrar los mejores y más espectaculares GIFs! Para expresarte y compartir a través de tus redes sociales.   <br />
     <a href="https://github.com/eriika19/giphy/tree/master/src"><strong>Explorar proyecto »</strong></a>
     <br />
     <br />
@@ -27,7 +27,7 @@ Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares 
   <br />
 </p>
  
- <h3 align="center"> React, Redux-Saga, Bootstrap, GiphyFetch, Express, Eslint, Lint-staged</h3>
+ <h3 align="center"> React, Redux-Saga, Bootstrap, GiphyFetch, Express, Eslint, Lint-staged, Heroku</h3>
  
  <br />
 
@@ -45,8 +45,10 @@ Giphy la herramienta que te donde puedes encontrar los mejores y espectaculares 
 
 ## Acerca del proyecto 🚀
 
-Esta aplicación se desarrollo como app web que permite visualizar, encontrar y guardar, los mejores
-GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir la API de Giphy
+Esta aplicación se desarrollo como app web que permite buscar y visulaizar los mejores GIFs de
+manera fácil y rápida.
+
+Implementa solicitudes fetch por la cuál se consume la API de Giphy y, es totalmente responsiva.
 
  <br />
 
@@ -68,16 +70,17 @@ GIFs de manera fácil y rápida. Implementando solicitudes Axios para consumir l
 
 ### Próximos alcances
 
+- [ ] Agregar templates de campos de búsqueda para una búsqueda express.
 - [ ] Añadir tests en todos los componentes.
 
 ## Correr proyecto localmente
 
-Este proyecto puede ser corrido en un equipo local, clonando e instalando localmente las
-dependencias requeridas.
+Este proyecto se puede correr en un equipo local, clonando este repositori e instalando localmente
+las dependencias requeridas.
 
-### Crear proyecto localmente
+### Clonar
 
-Comenzar proyecto de manera locar clonando este repositorio con:
+Introducir el siguiente comando para clonar este repositorio:
 
 ```
 $ git clone https://github.com/eriika19/giphy.git
@@ -94,7 +97,7 @@ $ yarn
 
 ### Variables de ambiente
 
-Se deben definir las API_KEY en las variables de ambiente , ya que el repositorio no las incluye. Es
+Se deben definir la API_KEY en las variables de ambiente, ya que este repositorio no las incluye. Es
 posible correr `cp .env.example .env` para definir las propias variables de ambiente en archivo
 `.env`.
 
@@ -118,17 +121,15 @@ $ yarn dev
 $ yarn build
 ```
 
-- Para correr Giphy en un ambiente de desarrollo ejecutar:
-
 ```
 $ yarn start
 ```
 
-Una vez corriendo estará listo en `http://localhost:3000/`
+Una vez que el proyecto este corriendo estará listo en `http://localhost:3000/`
 
 ### Ejecutar tests
 
-Para ejecutar los tests correr los siguientes comando:
+Para ejecutar los tests correr los siguientes comandos:
 
 ```
 $ yarn test
@@ -140,9 +141,9 @@ $ yarn test:coverage
 
 ### Prettier and Eslint
 
-Prettier and Eslint se ejecutarán automáticamente al realizar un _commit_.
-
-Sin embargo, también pueden ser ejecutados independentemente con los siguientes comandos:
+Prettier y Eslint se ejecutarán automáticamente al realizar un _commit_ a través de la configuración
+de `lint-sataged` y `husky`. Sin embargo, también pueden ser ejecutados independentemente con los
+siguientes comandos:
 
 **Prettier**
 
