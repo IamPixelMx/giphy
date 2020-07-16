@@ -25,13 +25,16 @@
       "^assets(.*)$": "<rootDir>/src/assets$1",
       "^components(.*)$": "<rootDir>/src/components$1",
       "^pages(.*)$": "<rootDir>/src/pages$1",
+      "^store(.*)$": "<rootDir>/src/store$1",
       "^utils(.*)$": "<rootDir>/src/utils$1"
     },
     "collectCoverageFrom": [
       "src/components/**/*.{js,jsx}",
+      "src/store/**/*.{js,jsx}",
       "src/pages/**/*.{js,jsx}",
       "!src/*.{js,jsx}",
-      "!**/*/index.js"
+      "!**/*/index.js",
+      "!src/store/configureStore.js"
     ]
   },
   "browserslist": {
@@ -54,10 +57,13 @@
     "express-favicon": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
     "react-resize-observer": "^1.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "reactstrap": "^8.5.1"
+    "reactstrap": "^8.5.1",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
@@ -79,6 +85,7 @@
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
     "react-app-rewired": "^2.1.6",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

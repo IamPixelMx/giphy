@@ -8,6 +8,7 @@ const aliases = {
   assets: `${root}/src/assets`,
   components: `${root}/src/components`,
   pages: `${root}/src/pages`,
+  store: `${root}/src/store`,
   utils: `${root}/src/utils`,
 };
 

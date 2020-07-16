@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Form, FormGroup, Label, Input, InputGroup, InputGroupAddon, Button } from 'reactstrap';
 
 import { giphy } from 'assets/giphy';
 
 const SearchInput = ({ buttonText, placeholder }) => {
+  const [valueInput, setValueInput] = useState(undefined);
+
   return (
     <Form className='container'>
       <FormGroup>
@@ -14,7 +16,16 @@ const SearchInput = ({ buttonText, placeholder }) => {
           </Label>
         </div>
         <InputGroup>
-          <Input type='search' name='search' id='input-search' placeholder={placeholder} />
+          <Input
+            value={valueInput}
+            type='search'
+            name='search'
+            id='input-search'
+            placeholder={placeholder}
+            onChange={e => {
+              setValueInput(e.target.value);
+            }}
+          />
           <InputGroupAddon addonType='append'>
             <Button color='primary'>{buttonText}</Button>
           </InputGroupAddon>
