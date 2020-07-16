@@ -18,7 +18,7 @@ const gifsReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
 
     case FETCH_GIFS_ERROR:
       return {
-        target: { value: undefined, trending: false, data: '' },
+        target: { ...state.target, value: undefined, trending: false },
         error: payload,
         fetching: false,
       };

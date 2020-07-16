@@ -3,19 +3,18 @@ import React, { useState } from 'react';
 import ResizeObserver from 'react-resize-observer';
 import { Gif, Grid } from '@giphy/react-components';
 import { useSelector } from 'react-redux';
-import { getTrendingGifs } from 'store/sagas/api';
+
 import { getTargetValue } from 'selectors';
-
+import { getTrendingGifs } from 'store/sagas/api';
 import { giphyFetch } from 'utils';
-
-// fetch 10 gifs at a time as the user scrolls (offset is handled by the grid)
 
 const GiphyGrid = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [modalGif, setModalGif] = useState();
   const targetValue = useSelector(getTargetValue);
-  const getTargetGifs = offset => giphyFetch.search(targetValue, { offset, lang: 'es', limit: 10 });
-  const fetchGifs = targetValue ? getTargetGifs : getTrendingGifs;
+  const fetchGifs = targetValue
+    ? offset => giphyFetch.search(targetValue, { offset, lang: 'es', limit: 10 })
+    : getTrendingGifs;
 
   const onClick = (gif, e) => {
     e.preventDefault();

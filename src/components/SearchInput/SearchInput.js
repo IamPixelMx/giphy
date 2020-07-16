@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Label, Input, InputGroup, InputGroupAddon, Button } from 'reactstrap';
 import { useDispatch } from 'react-redux';
-import { fetchGifs } from 'actions';
 
+import { fetchGifs } from 'actions';
 import { giphy } from 'assets/giphy';
 
 const SearchInput = ({ buttonText, placeholder }) => {
-  const [valueInput, setValueInput] = useState(undefined);
   const dispatch = useDispatch();
+  const [valueInput, setValueInput] = useState('');
 
   const onEnter = e => {
     if (e.key === 'Enter') {
@@ -16,10 +16,8 @@ const SearchInput = ({ buttonText, placeholder }) => {
       dispatch(fetchGifs({ value: valueInput, trending: false }));
     }
   };
+
   const onClick = e => {
-    if (e.key === 'Enter') {
-      alert(e.value);
-    }
     e.preventDefault();
     dispatch(fetchGifs({ value: valueInput, trending: false }));
   };

@@ -8,7 +8,7 @@ class App extends React.PureComponent {
     return (
       <Router basename={window.location.pathname || ''}>
         <Switch>
-          <Route exact path={routes.home} component={Home} />
+          <Route exact path={routes.home} render={props => <Home />} />
         </Switch>
       </Router>
     );

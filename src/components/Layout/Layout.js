@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
-import { fetchGifs } from 'actions';
 import { Navbar } from 'components';
+import { fetchGifs } from 'actions';
 
 const Layout = ({ children }) => {
   const dispatch = useDispatch();
+
   const shortcutFunc = () => {
     dispatch(fetchGifs({ value: undefined, trending: true }));
   };

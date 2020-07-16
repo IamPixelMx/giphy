@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://gipphy.herokuapp.com">
-    <img src="public/logo.png" alt="Logo" width="155">
+    <img src="public/logo.png" alt="Logo" width="255">
   </a>
 <br />
 <br />

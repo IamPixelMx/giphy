@@ -1,5 +1,4 @@
 const { override, addWebpackAlias } = require('customize-cra');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const root = path.resolve(__dirname);
