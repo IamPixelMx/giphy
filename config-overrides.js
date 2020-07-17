@@ -11,6 +11,7 @@ const aliases = {
   selectors: `${root}/src/store/selectors`,
   store: `${root}/src/store`,
   utils: `${root}/src/utils`,
+  'jest-utils': `${root}/src/jest/utils`,
 };
 
 module.exports = override(addWebpackAlias(aliases));

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Renders Home page 1`] = `
+Array [
+  <div>
+    <nav
+      className="navbar navbar-expand-md navbar-dark bg-dark"
+    >
+      <a
+        className="navbar-brand"
+      >
+        <img
+          alt="logo"
+          className="navbar-logo mx-3"
+          src="logo.svg"
+        />
+        <span>
+          <strong>
+            GIPHY
+          </strong>
+        </span>
+      </a>
+      <ul
+        className="ml-4 float-md-right navbar-nav"
+      >
+        <li
+          className="nav-item"
+          onClick={[Function]}
+        >
+          <a
+            className="text-light nav-link"
+            onClick={[Function]}
+          >
+            Top Choice
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>,
+  <main>
+    <div
+      className="container my-4"
+    >
+      <div
+        className="text-center"
+      >
+        <label
+          className=""
+          htmlFor="input-search"
+        >
+          <img
+            alt="logo"
+            className="label-search"
+            src="giphy.png"
+          />
+        </label>
+      </div>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          id="input-search"
+          name="search"
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          placeholder="Encuentra los mejores GIFs... 🔎"
+          type="search"
+          value=""
+        />
+        <div
+          className="input-group-append"
+        >
+          <button
+            aria-label={null}
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Buscar
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </main>,
+]
+`;

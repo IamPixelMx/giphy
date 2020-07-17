@@ -1,10 +1,15 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { Home } from 'pages';
-import { SearchInput } from 'components';
+import configureStore from 'redux-mock-store';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<Home />);
-  const InputElement = render(<SearchInput />);
-  expect(InputElement).toBeInTheDocument();
+import { renderWithProviderSnapshot } from 'jest-utils';
+import { Home } from 'pages';
+
+const mockStore = configureStore([]);
+
+describe('Home', () => {
+  const homeElement = renderWithProviderSnapshot(<Home />, { mockStore }).toJSON();
+
+  it('Renders Home page', () => {
+    expect(homeElement).toMatchSnapshot();
+  });
 });

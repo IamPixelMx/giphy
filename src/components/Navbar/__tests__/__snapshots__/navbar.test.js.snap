@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Renders Navbar 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand-md navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+    >
+      <img
+        alt="logo"
+        className="navbar-logo mx-3"
+        src="logo.svg"
+      />
+      <span>
+        <strong>
+          GIPHY
+        </strong>
+      </span>
+    </a>
+    <ul
+      className="ml-4 float-md-right navbar-nav"
+    >
+      <li
+        className="nav-item"
+        onClick={[Function]}
+      >
+        <a
+          className="text-light nav-link"
+          onClick={[Function]}
+        >
+          Top Choice
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

@@ -25,6 +25,7 @@
       "^assets(.*)$": "<rootDir>/src/assets$1",
       "^components(.*)$": "<rootDir>/src/components$1",
       "^pages(.*)$": "<rootDir>/src/pages$1",
+      "^jest-utils(.*)$": "<rootDir>/src/jest/utils$1",
       "^actions(.*)$": "<rootDir>/src/store/actions$1",
       "^selectors(.*)$": "<rootDir>/src/store/selectors$1",
       "^store(.*)$": "<rootDir>/src/store$1",
@@ -35,7 +36,8 @@
       "src/pages/**/*.{js,jsx}",
       "!src/*.{js,jsx}",
       "!**/*/index.js",
-      "!src/store/configureStore.js"
+      "!src/store/*.{js,jsx}",
+      "!src/store/*/**.{js,jsx}"
     ]
   },
   "browserslist": {
@@ -88,6 +90,7 @@
     "prettier": "^2.0.5",
     "react-app-rewired": "^2.1.6",
     "react-test-renderer": "^16.13.1",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.4"
   }
 }
