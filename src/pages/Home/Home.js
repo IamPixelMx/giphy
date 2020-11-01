@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       <SearchInput />
-      {targetData ? <GiphyGrid /> : ''}
+      {targetData && <GiphyGrid />}
     </Layout>
   );
 };
